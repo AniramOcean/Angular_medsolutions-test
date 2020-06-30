@@ -1,0 +1,49 @@
+.card__container {
+  width: 500px;
+  max-width: 100%;
+
+  .card__item {
+    cursor: pointer;
+  }
+
+  .card-img {
+    width: 500px;
+    height: 265px;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .card-content {
+    color: #0A2E33;
+  }
+
+  .card-category {
+    margin-top: 10px;
+    font-size: 11px;
+    color: #9DB8BA;
+    letter-spacing: 0.5px;
+    text-align: left;
+    line-height: 13px;
+    text-transform: uppercase;
+  }
+
+  .card-header {
+  }
+
+  .card-title {
+    font-size: 16px;
+    text-align: left;
+    line-height: 19px;
+  }
+
+  .card-teaser {
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,8 @@
+<div class="main__container">
+  <div class="card-list__container">
+    <div class="card-list__content" *ngFor="let card of cards">
+      <app-card [card]="card"></app-card>
+    </div>
+  </div>
+  <div class="paginator"></div>
+</div>

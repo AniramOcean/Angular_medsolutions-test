@@ -1,0 +1,14 @@
+<div class="card__container" [routerLink]="['/news', card.id]">
+  <article class="card__item">
+    <div class="card-img">
+      <img src="{{card.image_url}}" alt="img">
+    </div>
+    <div class="card-content">
+      <div class="card-category">{{card.news_category}}</div>
+      <div class="card-header">
+        <h4 class="card-title">{{card.title}}</h4>
+      </div>
+      <div class="card-teaser">{{card.teaser | limitSymbols}}</div>
+    </div>
+  </article>
+</div>

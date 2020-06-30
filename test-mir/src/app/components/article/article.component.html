@@ -1,0 +1,26 @@
+<div class="news__container" *ngIf="card$ | async as card">
+  <div class="article__container">
+    <article class="article__content">
+        <div class="article-category">{{card.news_category}}</div>
+        <h3 class="article-title">{{card.title}}</h3>
+        <div class="article-date">{{card.created_at | date: 'd MMMM y': null: 'ru'}}</div>
+        <div class="article-img">
+          <img src="{{card.image_url}}" alt="article-image">
+        </div>
+        <div class="article-text" [innerHTML]="card.text"></div>
+        <a href="{{card.source}}" class="article-link">Ссылка на источник</a>
+    </article>
+  </div>
+  <div class="popular-news__container">
+    <h4 class="popular-news__title">Популярные новости</h4>
+    <div class="popular-news__content" *ngFor="let popular of populars">
+      <div>
+        <div class="popular-img">
+          <img src="{{popular.image_url}}" alt="popular-img">
+        </div>
+        <div class="popular-category">{{popular.category}}</div>
+        <h4 class="popular-title">{{popular.title}}</h4>
+      </div>
+    </div>
+  </div>
+</div>

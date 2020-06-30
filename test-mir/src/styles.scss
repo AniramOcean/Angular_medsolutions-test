@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+$white-1: rgba(255, 255, 255);
+$white-2: rgba(233, 233, 233);
+$black: rgba(33, 33, 33);
+$warm-grey: rgba(117, 117, 117);
+$dark-teal-10: rgba(0, 63, 73, 0.11);
+$salmon: rgba(255, 138, 101);
+$grapefruit: rgba(255, 82, 82);
+$rusty-red-30: rgba(186, 16, 12, 0.31);
+$blue-logo: rgba(48, 174, 199);
+
+body {
+  max-width: 1920px;
+  max-height: 1070px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
